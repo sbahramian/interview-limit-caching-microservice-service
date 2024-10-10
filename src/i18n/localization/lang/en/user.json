@@ -1,0 +1,22 @@
+{   
+    "GET_USER_PROFILE_SUCCESSFULLY": { 
+        "code": {
+            "enum": "GET_USER_PROFILE_SUCCESSFULLY", 
+            "number": 10200
+        },
+        "text": {
+            "developer": "Get user data successfully.", 
+            "client": "Get user data successfully."
+        }
+    },
+    "USER_NOT_FOUND": {
+        "code": {
+            "enum": "USER_NOT_FOUND", 
+            "number": 10404
+        },
+        "text": {
+            "developer": "User not found.", 
+            "client": "User not found."
+        }
+    }
+}

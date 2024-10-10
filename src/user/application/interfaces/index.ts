@@ -1,0 +1,1 @@
+export { UserInterface, GetUserDataResponse, GetUserDataResponseInterface } from './get-user-profile-response.interface';

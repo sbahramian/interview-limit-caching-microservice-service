@@ -1,0 +1,114 @@
+{   
+    "SERVICE_UNAVAILABLE_ERROR": { 
+        "code": {
+            "enum": "SERVICE_UNAVAILABLE_ERROR", 
+            "number": 10503
+        },
+        "text": {
+            "developer": "The service is currently unavailable. Please try again later.", 
+            "client": "Server error!"
+        }
+    },
+    "UNAUTHORIZED_ERROR": { 
+        "code": {
+            "enum": "UNAUTHORIZED_ERROR", 
+            "number": 10401
+        },
+        "text": {
+            "developer": "Access unauthorized. Please provide a valid token. Your current token may have expired or is not valid for this request.", 
+            "client": "Unauthorized access"
+        }
+    },
+    "UNAUTHORIZED": { 
+        "code": {
+            "enum": "UNAUTHORIZED", 
+            "number": 10401
+        },
+        "text": {
+            "developer": "Access unauthorized. Please provide a valid token. Your current token may have expired or is not valid for this request.", 
+            "client": "Unauthorized access"
+        }
+    },
+    "FORBIDDEN_RESOURCE_ERROR": { 
+        "code": {
+            "enum": "FORBIDDEN_RESOURCE_ERROR", 
+            "number": 10403
+        },
+        "text": {
+            "developer": "Permission denied. You do not have the required access rights.", 
+            "client": "Permission denied"
+        }
+    },
+    "USER_BANNED_ERROR": { 
+        "code": {
+            "enum": "USER_BANNED_ERROR", 
+            "number": 10406
+        },
+        "text": {
+            "developer": "The user banned by the admin!, please redirect to login page immediately!", 
+            "client": "SampleChallenge has banned your account!"
+        }
+    },
+    "INTERNAL_SERVER_ERROR": { 
+        "code": {
+            "enum": "INTERNAL_SERVER_ERROR", 
+            "number": 10500
+        },
+        "text": {
+            "developer": "An internal server error occurred. Please contact support for assistance.", 
+            "client": "Server error!"
+        }
+    },
+    "VALIDATE": {
+        "OBJECT_ID": {
+            "code": {
+                "enum": "VALIDATE.OBJECT_ID", 
+                "number": 10400
+            },
+            "text": {
+                "developer": "Object id not valid.", 
+                "client": "Object id not valid."
+            }
+        }
+    },
+    "TOO_MANY_REQUEST_ERROR": { 
+        "code": {
+            "enum": "TOO_MANY_REQUEST_ERROR", 
+            "number": 10429
+        },
+        "text": {
+            "developer": "Too many requests. you are send a lot of request for server, your banned temporarily.", 
+            "client": "Too many attempts, please try again later."
+        }
+    },
+    "POLICY_ENDPOINT_ERROR": { 
+        "code": {
+            "enum": "POLICY_ENDPOINT_ERROR", 
+            "number": 10424
+        },
+        "text": {
+            "developer": "Policy guard must be used with @SetPolicy decorator", 
+            "client": "Policy guard must be used with @SetPolicy decorator"
+        }
+    },
+    "GET_PAGINATION_SUCCESSFULLY": {
+        "code": {
+            "enum": "GET_PAGINATION_SUCCESSFULLY", 
+            "number": 10200
+        },
+        "text": {
+            "developer": "Get list of items proccess successfully.", 
+            "client": "Get list of items proccess successfully."
+        }
+    },
+    "REDIS_SERVICE_DOWN": {
+        "code": {
+            "enum": "REDIS_SERVICE_DOWN", 
+            "number": 503
+        },
+        "text": {
+            "developer": "Redis service is either not active or not connected.",
+            "client": "The service is currently unavailable. Please try again later."
+        }
+    }    
+}

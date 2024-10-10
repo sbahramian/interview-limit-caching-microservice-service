@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - IS_DEVELOPMENT=${IS_DEVELOPMENT}
+      - IS_TEST_MODE=${IS_TEST_MODE}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - LOG_PRETTY=${LOG_PRETTY}
+      - HTTP_PORT=${HTTP_PORT}
+      - SENTRY_DSN=${SENTRY_DSN}
+      - MONGO_DB=${MONGO_DB}
+      - MONGO_HOST=${MONGO_HOST}
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASS=${MONGO_PASS}
+      - MONGO_PORT=${MONGO_PORT}
+      - MONGO_QUERY=${MONGO_QUERY}
+      - REDIS_DB=${REDIS_DB}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_USER=${REDIS_USER}
+      - REDIS_PASS=${REDIS_PASS}
+      - REDIS_PORT=${REDIS_PORT}
+      - EXPIRES_CACHE_TIME=${EXPIRES_CACHE_TIME}
+      - RATE_LIMIT_MAX_REQUESTS=${RATE_LIMIT_MAX_REQUESTS}
+      - RATE_LIMIT_WINDOW_IN_SECONDS=${RATE_LIMIT_WINDOW_IN_SECONDS}
+    ports:
+      - "${HTTP_PORT}:${HTTP_PORT}"

@@ -1,0 +1,1 @@
+export { UserDataOpenApiDecorator } from './user-data-openapi.decorator';
